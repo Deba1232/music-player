@@ -1,23 +1,18 @@
 import './App.css'
+import Album from './components/Album'
+import Player from './components/Player'
 
 function App() {
 
   return (
-    <h1>Music Player</h1>
-
-
-
-
-
-
-
-
-
     
 
+   <div>
 
+    <Album/>
+    <Player/>
 
-
+   </div>
 
   )
 
