@@ -1,6 +1,6 @@
 import './App.css'
-import Album from './components/Album'
-import Player from './components/Player'
+import Album from './components/Album/Album'
+import Player from './components/Player/Player'
 
 function App() {
 
