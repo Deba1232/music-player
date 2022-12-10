@@ -1,0 +1,36 @@
+.playlist-overlay{
+
+    background-color: rgb(59, 116, 71);
+
+    width: 100%;
+    min-height: 10rem;
+    height: 20vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+
+    
+    
+}
+.playlist-overlay::-webkit-scrollbar {
+    display: none;
+  }
+
+.playlist-overlay .card{
+
+    background-color: #721954;;
+    border: 0.125rem solid #9f1ca4;
+    border-radius: 0.5rem;
+    /* height: 80%; */
+    
+    /* flex-grow: 1; */
+    /* flex-basis: 2rem; */
+    
+    aspect-ratio: 1;
+    min-width: 10rem;
+    object-fit: cover;
+
+}
