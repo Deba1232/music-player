@@ -1,0 +1,55 @@
+.controls{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.controls div.left{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.controls div.center{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.controls div.center .play,
+.controls div.center .pause{
+    width: 4rem;
+}
+.controls div.center .shuffle{
+    height: 2rem;
+}
+.controls div.center .repeat{
+    height: 3rem;
+}
+
+.controls div.right{
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+}
+.controls div.right .playlist{
+    width: 2rem;
+}
+.controls div.right .volume,
+.controls div.right .mute{
+    width: 3rem;
+    height: 3rem;
+}
+
+.controls img{
+    width: 2.5rem;
+}
+
+.controls img.pause{
+    display: none;
+}
+.controls img.mute{
+    display: none;
+}
