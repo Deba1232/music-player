@@ -1,9 +1,8 @@
 .controls{
-    max-width: 100vw;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 1rem;
 }
 
@@ -12,9 +11,26 @@
     align-items: center;
     gap: 0.25rem;
 }
+.controls div.left img{
+    width: 4rem;
+}
+.controls div.left .song-name__container{
+    width: 4rem;
+    /* overflow-x: scroll; */
+    white-space: nowrap;
+}
+.controls div.left .song-name__container::-webkit-scrollbar{
+    display: none;
+}
+.controls div.left .song-name{
+    
+}
 
 .controls div.center{
+    width: 20rem;
+    flex-shrink: 0;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     gap: 0.625rem;
 }
@@ -47,9 +63,47 @@
     width: 2.5rem;
 }
 
+.controls img.play{
+    /* display: none; */
+}
 .controls img.pause{
     display: none;
 }
+.controls img.volume{
+    /* display: none; */
+}
 .controls img.mute{
     display: none;
+}
+
+@media (max-width: 600px){
+    .controls div.left img{
+        width: 3rem;
+    }
+    .controls div.left .song-name__container{
+        width: 3rem;
+        overflow-x: scroll;
+    }
+
+    .controls div.center{
+        width: 15rem;
+    }
+
+    .controls div.center .play,
+    .controls div.center .pause{
+        width: 3rem;
+    }
+
+    .controls div.right .playlist{
+        width: 1.5rem;
+    }
+
+    .controls img{
+        width: 1.2rem;
+    }
+}
+@media (max-width: 800px){
+    .controls div.left .song-name__container{
+        overflow-x: scroll;
+    }
 }

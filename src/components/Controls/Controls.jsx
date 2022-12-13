@@ -23,7 +23,11 @@ function Controls () {
                     alt="Album Image" 
 
                   />
-                  <span className='song-name'>Song Name</span>
+                  
+                  <div className='song-name__container'>
+                    <h4 className='song-name'>song names</h4>
+                  </div>
+
             </div>
 
             <div className='center'>
