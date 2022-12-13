@@ -27,8 +27,7 @@
 }
 
 .controls div.center{
-    width: 20rem;
-    flex-shrink: 0;
+    width: 25rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,7 +45,9 @@
 }
 
 .controls div.right{
+    width: 7rem;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     gap: 0.125rem;
 }
@@ -76,13 +77,12 @@
     display: none;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .controls div.left img{
         width: 3rem;
     }
     .controls div.left .song-name__container{
         width: 3rem;
-        overflow-x: scroll;
     }
 
     .controls div.center{
@@ -94,6 +94,9 @@
         width: 3rem;
     }
 
+    .controls div.right{
+        width: 5rem;
+    }
     .controls div.right .playlist{
         width: 1.5rem;
     }
@@ -105,5 +108,6 @@
 @media (max-width: 800px){
     .controls div.left .song-name__container{
         overflow-x: scroll;
+        text-overflow: ellipsis;
     }
 }
