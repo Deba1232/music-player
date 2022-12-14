@@ -9,8 +9,6 @@
     overflow-x: hidden;
 
 
-}
-
 .playlist-overlay::-webkit-scrollbar{
     display: none;
 }
