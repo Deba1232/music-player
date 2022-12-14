@@ -1,37 +1,37 @@
 .playlist-overlay{
 
-    background-color: rgb(59, 116, 71);
-
+    background-color: rgba(0, 0, 0, 0.342);
+    
     width: 100%;
-    min-height: 10rem;
-    height: 20vh;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
-    overflow-x: auto;
+    overflow-x: hidden;
 
+
+.playlist-overlay::-webkit-scrollbar{
     display: none;
-    
-    
 }
-.playlist-overlay::-webkit-scrollbar {
-    display: none;
-  }
 
-.playlist-overlay .card{
+.playlist-overlay .playlist-left-button , .playlist-right-button{
 
-    background-color: #721954;;
-    border: 0.125rem solid #9f1ca4;
-    border-radius: 0.5rem;
-    /* height: 80%; */
-    
-    /* flex-grow: 1; */
-    /* flex-basis: 2rem; */
-    
-    aspect-ratio: 1;
-    min-width: 10rem;
-    object-fit: cover;
-
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
 }
+
+.playlist-overlay .playlist-left-button{
+    left: 0;
+}
+.playlist-overlay .playlist-right-button{
+    right: 0;
+}
+
+.playlist-overlay .playlist-left-button img{
+    fill: blue;
+}
+.playlist-overlay .playlist-right-button>img{
+    right: 0;
+}
+
