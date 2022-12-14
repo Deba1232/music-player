@@ -31,16 +31,16 @@ function Controls () {
             </div>
 
             <div className='center'>
-                <img className='shuffle' src={shuffleButton} alt='shuffle'></img>
-                <img className='previous' src={prevButton} alt='previous'></img>
-                <img className='play' src={playButton} alt='play'></img>
-                <img className='pause' src={pauseButton} alt='pause'></img>
-                <img className='next' src={nextButton} alt='next'></img>
-                <img className='repeat' src={repeatButton} alt='repeat'></img>
+                <img className='shuffle' src={shuffleButton} alt='shuffle' title='Enable Shuffle'></img>
+                <img className='previous' src={prevButton} alt='previous' title='Previous Song'></img>
+                <img className='play' src={playButton} alt='play' title='Play'></img>
+                <img className='pause' src={pauseButton} alt='pause' title='Pause'></img>
+                <img className='next' src={nextButton} alt='next' title='Next Song'></img>
+                <img className='repeat' src={repeatButton} alt='repeat' title='Enable Repeat'></img>
             </div>
 
             <div className='right'>
-            <img className='playlist' src={playListButton} alt='playlist'></img>
+            <img className='playlist' src={playListButton} alt='playlist'title='Song Queue'></img>
             <img className='volume' src={volumeIcon} alt='volume'></img>
             <img className='mute' src={muteIcon} alt='mute'></img>
             </div>

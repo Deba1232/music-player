@@ -32,13 +32,14 @@
     justify-content: space-around;
     align-items: center;
     gap: 0.625rem;
+    position: relative;
+}
+.controls div.center .shuffle{
+    height: 2rem;
 }
 .controls div.center .play,
 .controls div.center .pause{
     width: 4rem;
-}
-.controls div.center .shuffle{
-    height: 2rem;
 }
 .controls div.center .repeat{
     height: 3rem;
