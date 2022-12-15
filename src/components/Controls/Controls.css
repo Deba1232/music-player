@@ -1,0 +1,116 @@
+.controls{
+    background-color: #025951;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    
+}
+
+.controls div.left{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.controls div.left img{
+    width: 4rem;
+}
+.controls div.left .song-name__container{
+    width: 4rem;
+    /* overflow-x: scroll; */
+    white-space: nowrap;
+}
+.controls div.left .song-name__container::-webkit-scrollbar{
+    display: none;
+}
+.controls div.left .song-name{
+    
+}
+
+.controls div.center{
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.625rem;
+}
+.controls div.center .play,
+.controls div.center .pause{
+    width: 4rem;
+}
+.controls div.center .shuffle{
+    height: 2rem;
+}
+.controls div.center .repeat{
+    height: 3rem;
+}
+
+.controls div.right{
+    width: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.125rem;
+}
+.controls div.right .playlist{
+    width: 2rem;
+}
+.controls div.right .volume,
+.controls div.right .mute{
+    width: 3rem;
+    height: 3rem;
+}
+
+.controls img{
+    width: 2.5rem;
+}
+
+.controls img.play{
+    /* display: none; */
+}
+.controls img.pause{
+    display: none;
+}
+.controls img.volume{
+    /* display: none; */
+}
+.controls img.mute{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .controls div.left img{
+        width: 3rem;
+    }
+    .controls div.left .song-name__container{
+        width: 3rem;
+    }
+
+    .controls div.center{
+        width: 15rem;
+    }
+
+    .controls div.center .play,
+    .controls div.center .pause{
+        width: 3rem;
+    }
+
+    .controls div.right{
+        width: 5rem;
+    }
+    .controls div.right .playlist{
+        width: 1.5rem;
+    }
+
+    .controls img{
+        width: 1.2rem;
+    }
+}
+@media (max-width: 800px){
+    .controls div.left .song-name__container{
+        overflow-x: scroll;
+        text-overflow: ellipsis;
+    }
+}

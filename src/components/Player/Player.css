@@ -1,10 +1,11 @@
-
 /*  1. added for default positioning of the player
     2. can be further modified.
 */
 .player-container{
-    background-color: blue;
-    position:fixed;
+    /* background-color: blue; */
+    position:absolute;
     bottom: 0;
     width: 100%;
+
+    
 }
