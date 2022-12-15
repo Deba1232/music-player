@@ -1,0 +1,35 @@
+div.right{
+    width: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.125rem;
+}
+div.right .playlist{
+    width: 2rem;
+}
+div.right .volume,
+div.right .mute{
+    width: 3rem;
+    height: 3rem;
+}
+
+div.right img.volume{
+    /* display: none; */
+}
+div.right img.mute{
+    display: none;
+}
+
+@media (max-width: 700px){
+    div.right{
+        width: 5rem;
+    }
+    div.right .playlist{
+        width: 1.5rem;
+    }
+
+    div.right > img{
+        width: 1.2rem;
+    }
+}

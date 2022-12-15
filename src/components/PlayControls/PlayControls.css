@@ -1,0 +1,41 @@
+div.center{
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.625rem;
+    position: relative;
+}
+div.center .shuffle{
+    height: 2rem;
+}
+div.center .play, div.center .pause{
+    width: 4rem;
+}
+div.center .repeat{
+    height: 3rem;
+}
+
+div.center > img{
+    width: 2.5rem;
+}
+div.center img.play{
+    /* display: none; */
+}
+div.center img.pause{
+    display: none;
+}
+
+@media (max-width: 700px){
+    div.center{
+        width: 15rem;
+    }
+
+    div.center .play, div.center .pause{
+        width: 3rem;
+    }
+
+    div.center > img{
+        width: 1.2rem;
+    }
+}
