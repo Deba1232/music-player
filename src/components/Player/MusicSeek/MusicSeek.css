@@ -2,6 +2,7 @@
     width: 100%;
     position: absolute;
     bottom: 5.5rem;
+    z-index: 1;
 }
 
 .seek-slider{
