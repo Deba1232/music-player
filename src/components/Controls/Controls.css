@@ -1,9 +1,12 @@
 .controls{
+    background-color: #025951;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+
+    
 }
 
 .controls > img{

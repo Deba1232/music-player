@@ -5,7 +5,10 @@
 
 .album-container{
 
-    background-color: brown;
+    /* background-color: #038C3E; */
+    background: rgb(3,65,89);
+    background: linear-gradient(117deg, rgba(3,65,89,1) 0%, rgba(2,115,94,1) 32%, rgba(3,140,62,1) 100%);
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,6 +24,9 @@
     width: 30%;
     max-width: 20rem;
     aspect-ratio: 1;
+    
+
+    
 }
 
 .album-image{
@@ -29,7 +35,9 @@
     /* aspect-ratio: 1; */
     border-radius: 2rem;
     object-fit: cover;
-    
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 
 }
 

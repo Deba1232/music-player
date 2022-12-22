@@ -6,6 +6,9 @@
     justify-content: flex-start;
     align-items: center;
     overflow-x: hidden;
+
+    display: none;
+
 }
 
 .playlist-overlay::-webkit-scrollbar{
@@ -18,6 +21,7 @@
     cursor: pointer;
     position: absolute;
     z-index: 3;
+    
 }
 
 .playlist-overlay .playlist-left-button{
@@ -27,10 +31,4 @@
     right: 0;
 }
 
-.playlist-overlay .playlist-left-button img{
-    fill: blue;
-}
-.playlist-overlay .playlist-right-button>img{
-    right: 0;
-}
 
