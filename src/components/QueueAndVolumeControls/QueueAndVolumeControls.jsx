@@ -8,7 +8,7 @@ function QueueAndVolumeControls(){
 
     return(
 
-        <div className='right'>
+        <div className='queue-and-volume-controls'>
             <img className='playlist' src={playListButton} alt='playlist'title='Song Queue'></img>
             <img className='volume' src={volumeIcon} alt='volume'></img>
             <img className='mute' src={muteIcon} alt='mute'></img>

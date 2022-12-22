@@ -1,6 +1,8 @@
-import Playlist from '../Playlist/Playlist.jsx';
-import Controls from '../Controls/Controls.jsx';
 import './Player.css'
+
+import Playlist from '../Playlist/Playlist';
+import MusicSeek from './MusicSeek/MusicSeek';
+import Controls from '../Controls/Controls';
 
 function Player () {
 
@@ -9,6 +11,7 @@ function Player () {
         <div className='player-container'>
 
             <Playlist />
+            <MusicSeek />
             <Controls />
             
         </div>

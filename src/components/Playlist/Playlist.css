@@ -1,7 +1,6 @@
 .playlist-overlay{
 
     background-color: rgba(0, 0, 0, 0.342);
-    
     width: 100%;
     display: flex;
     justify-content: flex-start;

@@ -11,7 +11,7 @@ function PlayControls(){
 
     return(
 
-        <div className='center'>
+        <div className='play-controls'>
                 <img className='shuffle' src={shuffleButton} alt='shuffle' title='Enable Shuffle'></img>
                 <img className='previous' src={prevButton} alt='previous' title='Previous Song'></img>
                 <img className='play' src={playButton} alt='play' title='Play'></img>

@@ -4,7 +4,7 @@ function SongMiniCard() {
 
     return(
 
-        <div className='left'>
+        <div className='song-mini-card'>
                 <img 
 
                     className='albumImage'
@@ -16,6 +16,11 @@ function SongMiniCard() {
                   <div className='song-name__container'>
                     <h4 className='song-name'>song names</h4>
                   </div>
+
+                  <div className='song-timer__container'>
+                    <span className='song-timer'>0:00 / 4:00</span>
+                  </div>
+                  
 
         </div>
 

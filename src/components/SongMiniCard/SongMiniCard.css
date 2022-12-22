@@ -1,34 +1,49 @@
-div.left{
+div.song-mini-card{
     display: flex;
     align-items: center;
     gap: 0.25rem;
 }
-div.left img{
+
+div.song-mini-card img{
     width: 4rem;
 }
-div.left .song-name__container{
+
+div.song-mini-card .song-name__container{
     width: 4rem;
     /* overflow-x: scroll; */
     white-space: nowrap;
 }
-div.left .song-name__container::-webkit-scrollbar{
+div.song-mini-card .song-name__container::-webkit-scrollbar{
     display: none;
 }
-div.left .song-name{
+div.song-mini-card .song-name{
     
 }
 
+div.song-mini-card .song-timer__container{
+    position: absolute;
+    left: 77%;
+}
+
 @media (max-width: 700px){
-    div.left img{
+    div.song-mini-card img{
         width: 3rem;
     }
-    div.left .song-name__container{
+    div.song-mini-card .song-name__container{
         width: 3rem;
+    }
+
+    div.song-mini-card .song-timer__container{
+        display: none;
     }
 }
 @media (max-width: 800px){
-    div.left .song-name__container{
+    div.song-mini-card .song-name__container{
         overflow-x: scroll;
         text-overflow: ellipsis;
+    }
+
+    div.song-mini-card .song-timer__container{
+        display: none;
     }
 }

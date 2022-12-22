@@ -1,4 +1,4 @@
-div.center{
+div.play-controls{
     width: 25rem;
     display: flex;
     justify-content: space-around;
@@ -6,36 +6,41 @@ div.center{
     gap: 0.625rem;
     position: relative;
 }
-div.center .shuffle{
+div.play-controls .shuffle{
     height: 2rem;
 }
-div.center .play, div.center .pause{
+div.play-controls .play, div.play-controls .pause{
     width: 4rem;
 }
-div.center .repeat{
+div.play-controls .repeat{
     height: 3rem;
 }
 
-div.center > img{
+div.play-controls > img{
     width: 2.5rem;
 }
-div.center img.play{
+div.play-controls img.play{
     /* display: none; */
 }
-div.center img.pause{
+div.play-controls img.pause{
     display: none;
 }
 
 @media (max-width: 700px){
-    div.center{
+    div.play-controls{
         width: 15rem;
     }
 
-    div.center .play, div.center .pause{
+    div.play-controls .play, div.play-controls .pause{
         width: 3rem;
     }
 
-    div.center > img{
+    div.play-controls > img{
         width: 1.2rem;
+    }
+}
+@media (max-width: 800px){
+    div.play-controls .shuffle, div.play-controls .repeat{
+        display: none;
     }
 }
