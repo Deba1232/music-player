@@ -19,11 +19,12 @@ div.play-controls .repeat{
 div.play-controls > img{
     width: 2.5rem;
 }
-div.play-controls img.play{
-    /* display: none; */
+
+div.play-controls > img:hover{
+    transform: scale(1.1);
 }
-div.play-controls img.pause{
-    display: none;
+div.play-controls > img:active{
+    transform: scale(1);
 }
 
 @media (max-width: 700px){
