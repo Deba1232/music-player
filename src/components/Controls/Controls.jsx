@@ -10,7 +10,7 @@ function Controls () {
 
         <div className='controls'>
             <SongMiniCard/>
-            <PlayControls />
+            <PlayControls/>
             <QueueAndVolumeControls />
 
         </div>

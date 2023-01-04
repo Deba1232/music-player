@@ -12,7 +12,7 @@ function Player () {
 
             <Playlist />
             <MusicSeek />
-            <Controls />
+            <Controls/>
             
         </div>
         

@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState,useEffect,useContext } from 'react'
 
 import './PlayControls.css'
 
@@ -9,8 +9,9 @@ import prevButton from '../../assets/buttons/previous_button.svg'
 import repeatButton from '../../assets/buttons/repeat_button.svg'
 import shuffleButton from '../../assets/buttons/shuffle_button.svg'
 
-function PlayControls(){
+import { applicationContext } from '../../context/context'
 
+function PlayControls(){
 
     let [playButtonStyle,setPlayButtonStyle] = useState({});
     let [pauseButtonStyle,setPauseButtonStyle] = useState({});
@@ -28,13 +29,21 @@ function PlayControls(){
         }
     }, [playState]);
 
+    const {playerState,setPlayerState} = useContext(applicationContext);
+
     function playPauseButtonState(){
         if(playState === 'play'){
             setPlayState('pause');
+            setPlayerState((prevPlayerState) => {
+                return {...prevPlayerState, playState: true};
+            })
         }
 
         else{
             setPlayState('play');
+            setPlayerState((prevPlayerState) => {
+                return {...prevPlayerState, playState: false};
+            });
         }
     }
 
